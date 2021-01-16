@@ -152,7 +152,7 @@ THE SOFTWARE.
                     case "1": 
                         $('.eztimer-event-trigger').hide();
                         $('.eztimer-event-switch').show();
-                        $('#node-input-startupMessageText').text('Send previous event on startup');
+                        $('#node-input-startupMessageText').text('Send previous event on startup/resume');
                         if (atLoad.type != atEvent.type)
                             $('#node-input-startupMessage').prop("checked", true);
                         else
@@ -363,7 +363,7 @@ THE SOFTWARE.
     <div class="form-row">
         <label style="margin-left: 100px; width: 70%">
             <input type="checkbox" id="node-input-startupMessage" style="width: 20px; margin: 0">
-            <span id="node-input-startupMessageText">Send previous event on startup</span>
+            <span id="node-input-startupMessageText">Send previous event on startup/resume</span>
         </label>
     </div>
     <div class="eztimer-event eztimer-event-switch">

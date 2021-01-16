@@ -144,6 +144,7 @@ You can set the following:
 * Fixed HA zones when Node-RED is running as an HA addon using 'ingress'.
 * Fixed spurious log message saying event was sent when it wasn't (when repeat event suppression was enabled).
 * Completed implementation of `topic` and exposed to UI. [credit @ChristianMayer](https://github.com/mrgadget/node-red-contrib-eztimer/issues/43)
+* Input messages are stored and payload is transmitted as `_payload` property for subsequent events. [credit @ChristianMayer](https://github.com/mrgadget/node-red-contrib-eztimer/pull/45)
 
 ## 1.2.6
 * Fixed `cancel` action so that it correctly cancels the current timer run, and re-schedules the next `on` event. [credit @wokkeltje13](https://github.com/mrgadget/node-red-contrib-eztimer/issues/42)

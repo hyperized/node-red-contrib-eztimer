@@ -119,7 +119,6 @@ module.exports = function(RED) {
         }
 
         node.on('input', function(msg) {
-            if (msg.payload) log(msg);
             inputMsg = msg;
             let handled = false,
             requiresBootstrap = false;
@@ -647,7 +646,7 @@ module.exports = function(RED) {
             } else {
                 resume();
 
-                // Wait 1000ms for startup, then fire PREVIOUS event to ensure we're in the right state.
+                // Wait 500ms for startup, then fire PREVIOUS event to ensure we're in the right state.
                 setTimeout(function() {
                     if (events.on && events.on.moment && events.off && events.off.moment) {
                         if (events.off.moment.isAfter(events.on.moment)) {
@@ -672,7 +671,7 @@ module.exports = function(RED) {
                         }
                     }
                     updateStatus();
-                }, 1000);
+                }, 500);
             }
         }
 
