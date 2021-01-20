@@ -141,7 +141,8 @@ You can set the following:
 
 # Change Log
 ## 1.2.7
-* Fixed HA zones when Node-RED is running as an HA addon using 'ingress'.
+* Fixed HA zones when Node-RED is running as an HA addon using 'ingress' (web root path issue).
+* Enabled HA zones to work with multiple servers.  [credit @zachowj](https://github.com/mrgadget/node-red-contrib-eztimer/issues/39)
 * Fixed spurious log message saying event was sent when it wasn't (when repeat event suppression was enabled).
 * Completed implementation of `topic` and exposed to UI. [credit @ChristianMayer](https://github.com/mrgadget/node-red-contrib-eztimer/issues/43)
 * Input messages are stored and payload is transmitted as `_payload` property for subsequent events. [credit @ChristianMayer](https://github.com/mrgadget/node-red-contrib-eztimer/pull/45)
